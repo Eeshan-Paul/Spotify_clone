@@ -73,12 +73,13 @@ audioElement.addEventListener("timeupdate",()=>{
     // myfunction(audioElement.currentTime);
     var ctime=myfunction(audioElement.currentTime);
     var time=myfunction(audioElement.duration);
-    // console.log(time);
-    let currentcontent=document.getElementById("currenttime").innerHTML;
-    let content=document.getElementById("totaltime").innerHTML;
-    // console.log( content);
+    console.log(time);
+    console.log(ctime);
+    var currentcontent=document.getElementById("currenttime").innerHTML;
+    var content=document.getElementById("totaltime").innerHTML;
     content=time;
     currentcontent=ctime;
+    // console.log(ctime);
     document.getElementById("currenttime").innerHTML=currentcontent;
     document.getElementById("totaltime").innerHTML=content;
     // document.getElementById("totaltime").innerText=<p>${myfunction(audioElement.duration)}</p>;
